@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>539 財神報牌</title>
+    <meta name="description" content="539財神報牌 - 每日免費精準報牌，神明指路好運到手">
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1910949732871195');
+      fbq('init', '1630014208332093');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="539 財神報牌">
+    <meta property="og:description" content="539財神報牌 - 每日免費精準報牌，神明指路好運到手">
+    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ab166e4f-977f-49b5-a9bd-d37527fdd7b8/id-preview-9ec44bb6--5113e640-f2ce-4fc6-ad3d-18296bc72c67.lovable.app-1773399068038.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="539 財神報牌">
+    <meta name="twitter:description" content="539財神報牌 - 每日免費精準報牌，神明指路好運到手">
+    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ab166e4f-977f-49b5-a9bd-d37527fdd7b8/id-preview-9ec44bb6--5113e640-f2ce-4fc6-ad3d-18296bc72c67.lovable.app-1773399068038.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      :root {
+        --background: hsl(40, 60%, 94%);
+        --foreground: hsl(0, 0%, 10%);
+        --card: hsl(43, 60%, 95%);
+        --primary: hsl(145, 97%, 40%);
+        --primary-fg: hsl(0, 0%, 100%);
+        --secondary: hsl(4, 82%, 55%);
+        --secondary-fg: hsl(0, 0%, 100%);
+        --muted-fg: hsl(0, 0%, 40%);
+        --accent: hsl(40, 96%, 53%);
+        --accent-fg: hsl(0, 0%, 10%);
+        --border: hsl(40, 50%, 85%);
+        --gold-gradient: linear-gradient(145deg, hsl(40, 96%, 53%), hsl(45, 100%, 70%));
+      }
+      body {
+        font-family: 'Noto Sans TC', sans-serif;
+        background: var(--background);
+        color: var(--foreground);
+        min-height: 100vh;
+        padding-bottom: 80px;
+      }
+      h1, h2, h3 { font-family: 'Noto Serif TC', serif; }
+      /* Hero */
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 40px 16px 16px;
+        text-align: center;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 16px;
+        pointer-events: none;
+      }
+      .hero-bg img {
+        height: 420px;
+        width: auto;
+        object-fit: contain;
+        opacity: 0.15;
+      }
+      .hero-bg .fade {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, transparent, transparent 60%, var(--background));
+      }
+      .hero-content { position: relative; z-index: 10; }
+      .divider {
+        width: 96px;
+        height: 4px;
+        border-radius: 9999px;
+        background: var(--accent);
+        margin: 0 auto 12px;
+      }
+      .subtitle {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        color: var(--foreground);
+        margin-bottom: 4px;
+      }
+      .title {
+        font-size: 3rem;
+        font-weight: 900;
+        color: var(--secondary);
+        line-height: 1.1;
+      }
+      .tagline {
+        margin-top: 8px;
+        font-size: 1.25rem;
+        font-weight: 900;
+        color: var(--secondary);
+      }
+      /* 5/39 display */
+      .number-display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        margin-top: 24px;
+      }
+      .num-box {
+        border: 3px solid var(--secondary);
+        background: hsla(4, 82%, 55%, 0.15);
+        border-radius: 8px;
+        padding: 8px 12px;
+      }
+      .num-box span {
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.875rem;
+        font-weight: 900;
+        color: var(--secondary);
+      }
+      .num-box.large { padding: 10px 16px; }
+      .num-slash {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--foreground);
+      }
+      .num-desc {
+        margin-left: 8px;
+        font-size: 0.875rem;
+        font-weight: 900;
+        color: var(--foreground);
+        line-height: 1.4;
+      }
+      /* Balls */
+      .balls-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+      }
+      .balls-label {
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: var(--muted-fg);
+      }
+      .balls {
+        display: flex;
+        gap: 10px;
+      }
+      .ball {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--gold-gradient);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1rem;
+        font-weight: 900;
+        color: hsl(0, 0%, 10%);
+        filter: blur(6px);
+        user-select: none;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      }
+      .unlock-btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 8px 24px;
+        border-radius: 9999px;
+        background: hsla(4, 82%, 55%, 0.9);
+        color: var(--secondary-fg);
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+      }
+      .unlock-btn:hover { opacity: 0.9; }
+      .hero-desc {
+        margin-top: 16px;
+        font-size: 1rem;
+        color: var(--muted-fg);
+      }
+      /* Features */
+      .features {
+        max-width: 448px;
+        margin: 0 auto;
+        padding: 20px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .feature-card {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+        border-radius: 12px;
+        border: 1px solid hsla(40, 96%, 53%, 0.4);
+        background: var(--card);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      }
+      .feature-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: hsla(40, 96%, 53%, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .feature-icon svg {
+        width: 24px;
+        height: 24px;
+        stroke: var(--accent);
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .feature-title { font-weight: 700; color: var(--foreground); }
+      .feature-desc { font-size: 0.875rem; color: var(--muted-fg); }
+      /* Testimonials */
+      .testimonials {
+        max-width: 448px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+      .testimonials-title {
+        text-align: center;
+        font-family: 'Noto Serif TC', serif;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--secondary);
+        margin-bottom: 12px;
+      }
+      .testimonials-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .testimonial {
+        padding: 14px;
+        border-radius: 12px;
+        border: 1px solid hsla(40, 96%, 53%, 0.3);
+        background: var(--card);
+      }
+      .testimonial-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 4px;
+      }
+      .stars { font-size: 0.75rem; color: var(--accent); }
+      .testimonial-name { font-size: 0.875rem; font-weight: 700; }
+      .testimonial-text { font-size: 0.875rem; color: var(--muted-fg); }
+      /* Social proof */
+      .social-proof {
+        text-align: center;
+        padding: 12px 16px;
+        font-size: 0.875rem;
+        color: var(--muted-fg);
+      }
+      .social-proof strong {
+        font-weight: 700;
+        color: var(--secondary);
+      }
+      /* Sticky CTA */
+      .sticky-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        border-top: 1px solid hsla(40, 96%, 53%, 0.3);
+        background: hsla(40, 60%, 94%, 0.95);
+        backdrop-filter: blur(8px);
+        padding: 12px 16px;
+      }
+      .cta-btn {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 14px;
+        border-radius: 9999px;
+        background: var(--primary);
+        color: var(--primary-fg);
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        animation: pulse-line 2s ease-in-out infinite;
+      }
+      .cta-btn:hover { opacity: 0.95; }
+      .cta-btn svg { width: 20px; height: 20px; fill: currentColor; }
+      @keyframes pulse-line {
+        0%, 100% { box-shadow: 0 0 0 0 hsla(145, 97%, 40%, 0.4); }
+        50% { box-shadow: 0 0 0 12px hsla(145, 97%, 40%, 0); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1910949732871195&ev=PageView&noscript=1">
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1630014208332093&ev=PageView&noscript=1">
+    </noscript>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div style="position:relative">
+          <img src="https://lucky-line-boost.lovable.app/assets/god-of-wealth-BjDTkBLq.png" alt="">
+          <div class="fade"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="divider"></div>
+        <div class="subtitle">— 財神降臨 —</div>
+        <h1 class="title">539 財神報牌</h1>
+        <p class="tagline">✨ 神明指路・好運到手 ✨</p>
+        <div class="number-display">
+          <div class="num-box"><span>5</span></div>
+          <span class="num-slash">/</span>
+          <div class="num-box large"><span>39</span></div>
+          <span class="num-desc">從39個號碼中<br>選出5個中獎號</span>
+        </div>
+        <div class="balls-section">
+          <span class="balls-label">📌 今日財神指引號碼</span>
+          <div class="balls">
+            <div class="ball">08</div>
+            <div class="ball">15</div>
+            <div class="ball">22</div>
+            <div class="ball">33</div>
+            <div class="ball">37</div>
+          </div>
+          <a href="https://line.me/ti/p/Km37RyQmDK" target="_blank" rel="noopener noreferrer" class="unlock-btn">🔒 點擊解鎖號碼</a>
+        </div>
+        <p class="hero-desc">每日免費提供高命中號碼，跟著財神走！</p>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="features">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <div>
+          <p class="feature-title">每日精準報牌</p>
+          <p class="feature-desc">539高命中率分析</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg>
+        </div>
+        <div>
+          <p class="feature-title">免費加入</p>
+          <p class="feature-desc">不收任何費用</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <p class="feature-title">萬人見證</p>
+          <p class="feature-desc">口碑持續爆棚</p>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <p class="testimonials-title">⭐ 會員好評</p>
+      <div class="testimonials-list">
+        <div class="testimonial">
+          <div class="testimonial-header">
+            <span class="stars">★★★★★</span>
+            <span class="testimonial-name">王＊翔</span>
+          </div>
+          <p class="testimonial-text">跟了一週，已經中了兩次！財神真的罩我 🙏</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-header">
+            <span class="stars">★★★★★</span>
+            <span class="testimonial-name">林＊美</span>
+          </div>
+          <p class="testimonial-text">免費的這麼準，真的很佛心，大推！</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-header">
+            <span class="stars">★★★★★</span>
+            <span class="testimonial-name">陳＊宏</span>
+          </div>
+          <p class="testimonial-text">朋友介紹來的，沒想到第一天就中，太扯了</p>
+        </div>
+      </div>
+    </section>
+    <!-- Social proof -->
+    <section class="social-proof">
+      🔥 已有 <strong>12,000+</strong> 位牌友加入
+    </section>
+    <!-- Sticky CTA -->
+    <div class="sticky-cta">
+      <a href="https://line.me/ti/p/Km37RyQmDK" target="_blank" rel="noopener noreferrer" class="cta-btn">
+        <svg viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        🎯 免費加入，馬上領牌
+      </a>
+    </div>
+  </body>
+</html>
